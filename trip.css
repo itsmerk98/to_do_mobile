@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.heading {
+    width: 550px;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+
+}
+
+.div1 {
+    width: 130px;
+    height: 0;
+    margin: auto;
+    border: 1px solid #00000081;
+}
+
+.title {
+    font-size: 2.5rem;
+    margin: auto;
+}
+
+.back-btn {
+    width: 50%;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+}
+
+.icon {
+    width: 35px;
+    height: 35px;
+    background-color: orangered;
+    border-radius: 50%;
+    margin: auto;
+    margin-right: 9px;  
+    text-decoration: none;
+    display: flex;
+}
+
+.icon-btn {
+    margin: auto;
+    color: #ffffff;
+    font-weight: 100;
+    font-size: smaller;
+}
+.add-btn{
+    text-decoration: none;
+}
+
+.back{
+    width: 50px;
+    font-size: 25px;
+    color: gray;
+    margin: auto;
+    margin-left: 0;
+}
+
+.list-box {
+    width: 350px;
+    height: 55vh;
+    border: 1px solid orangered;
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.274);
+    position: relative;
+}
+
+.head-sec {
+    width: 240px;
+    font-size: 30px;
+    border-bottom: 1px solid gray;
+    position: absolute;
+    right: 0;
+    top: 30px;
+}
+
+.completed-task {
+    width: 240px;
+    font-size: 22px;
+    color: red;
+    text-decoration: line-through;
+    position: absolute;
+    top: 90px;
+    right: 0px;
+}
+
+.check{
+    width: 260px;
+    position: absolute;
+    top: 140px;
+    right: 0
+}
+
+#checkBox {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+label {
+    font-size: 25px;
+}
+
+.add-btn {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: orangered;
+    display: flex;
+
+}
+
+.add-btn>i {
+    margin: auto;
+    color: wheat;
+}
+
+/* Add item  */
+
+.add-item-box {
+    width: 400px;
+    height: auto;
+    border: 1px solid orangered;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.274);
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.add-item-box>P {
+    font-size: 20px;
+    color: orangered;
+    margin-top: 20px;
+    text-align: center;
+    position: relative;
+}
+
+form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+#item {
+    border: 1px solid orangered;
+    margin: auto;
+    margin-top: 20px;
+    width: 250px;
+    height: 33px;
+    border-radius: 5px;
+    outline: none;
+    font-size: large;
+}
+.pop-up-button{
+    background-color: red;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    color: white;
+    transition: .2s;
+}
+
+
+.pop-up-button:hover {
+    background-color: rgb(228, 0, 0);
+}
+
+.blur {
+    filter: blur(4px);
+}
+
+
+/* ==================== Responsive ================ */
+
+
+@media only screen and (max-width: 425px) {
+    .heading{
+        width: 70%;
+        margin-top: 25px;
+    }
+    .div1{
+        display: none;
+    }
+    .title{
+        font-size: 2rem;
+    }
+    .back-btn{
+        margin-top: 20px;
+    }
+    .list-box{
+        width: 90%;
+    }
+    .add-item-box{
+        width:90%;
+        margin:auto;
+
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+    }
+    #item{
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .heading{
+        width: 95%;
+    }
+    .div1{
+        width: 20%;
+    }
+
+    
+}
